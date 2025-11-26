@@ -1,0 +1,33 @@
+{
+  "name": "@inference-net/provider-conversions",
+  "version": "0.0.1",
+  "type": "module",
+  "packageManager": "yarn@4.11.0",
+  "main": "./dist/inference-net-provider-conversions.cjs",
+  "module": "./dist/inference-net-provider-conversions.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/inference-net-provider-conversions.js",
+      "require": "./dist/inference-net-provider-conversions.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && vite build",
+    "test": "vitest",
+    "test:run": "vitest run"
+  },
+  "devDependencies": {
+    "@anthropic-ai/sdk": "^0.71.0",
+    "ai": "^5.0.102",
+    "openai": "^6.9.1",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.4",
+    "vite-plugin-dts": "^4.5.4",
+    "vitest": "^4.0.14"
+  }
+}
